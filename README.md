@@ -33,7 +33,7 @@ Copia versionada, no dependencia viva: re-vendoriza desde el tag nuevo y lee el 
 
     CHARTER.md      la carta (la doctrina)
     adapters/       shims por herramienta (CLAUDE, AGENTS, GEMINI, .cursorrules)
-    plantillas/     role · ADR · bitácora · brief · next · PR-checklist
+    plantillas/     role · REGLAS · ADR · bitácora · brief · next · PR-checklist
     EJEMPLOS.md     tres equipos reales como prueba viva
 
 ## Cambium Charter (EN, essentials)

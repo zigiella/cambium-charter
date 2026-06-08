@@ -20,10 +20,14 @@ Los agentes olvidan, se pisan, derivan y a veces inventan. Sin disciplina compar
 
 ## Cómo se adopta
 
-1. **Use this template** (o copia `adapters/` + `plantillas/`).
-2. Rellena los **huecos**: `REGLAS.md` (tus innegociables), un `role.md` por agente, el mapa de jurisdicciones.
-3. Pon los **adaptadores** en la raíz (`CLAUDE.md`, `AGENTS.md`…): ya apuntan a `CHARTER.md`.
-4. Sella el linaje: en tu adaptador, *"Método: Cambium Charter v0.2"*.
+En el proyecto que adopta el método, mantén la **raíz limpia**:
+
+- **Raíz:** solo el/los **adaptadores** de tu herramienta (`CLAUDE.md`, `AGENTS.md`…). La herramienta los lee ahí.
+- **`.cambium/`:** el método vendorizado — `CHARTER.md`, tu `REGLAS.md` y un `VERSION` con el sello (p. ej. `Cambium Charter v0.2.3`).
+- **`docs/equipo/`:** un `role.md` por agente. **`bitacora/`:** `next.md` + las bitácoras.
+- El `README.md` del proyecto es **del proyecto**; no lo pises con el del kit.
+
+Pasos: *Use this template* (o copia lo necesario) → rellena `REGLAS.md` y los roles → pon el adaptador en la raíz → crea `.cambium/VERSION`. Nunca escribas rutas locales (`C:\…`) en ficheros versionados.
 
 ## Cómo se actualiza
 
@@ -57,4 +61,4 @@ An open, portable method for one human to direct several AI agents building real
 
 ## Linaje · licencia · versión
 
-Desciende del oficio **Cambium**. Textos bajo **CC-BY-4.0**; código y plantillas bajo **MIT** (ver `LICENSE`). Versión **v0.2**.
+Desciende del oficio **Cambium**. Textos bajo **CC-BY-4.0**; código y plantillas bajo **MIT** (ver `LICENSE`). Versión **v0.2.3**.

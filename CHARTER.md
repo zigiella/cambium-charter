@@ -24,7 +24,7 @@
 ## III. El arranque (génesis)
 
 - La primera agente que levanta el repo es la **coordinadora**. Recibe de la dirección humana el **brief del producto** y el **repo del proyecto**.
-- **Instala el método en el repo del proyecto** (no basta con leerlo): el adaptador de la herramienta en la raíz, `CHARTER.md`, `REGLAS.md` (del brief), un `docs/equipo/<nombre>_role.md` por agente y `bitacora/next.md`. Sella la versión del kit. Ese es el primer commit del método en el proyecto.
+- **Instala el método en el repo del proyecto** (no basta con leerlo), sin ensuciar la raíz: solo el **adaptador** de la herramienta va en la raíz (la herramienta lo lee ahí); el resto —`CHARTER.md`, `REGLAS.md`, `VERSION`— vive en **`.cambium/`**. Añade `docs/equipo/<nombre>_role.md` por agente y `bitacora/next.md`. **No sobrescribas el `README.md` del proyecto** y **no escribas rutas locales** (`C:\…`) en ficheros versionados. Ese es el primer commit del método.
 - **Propone; la humana ratifica:** el equipo mínimo (roles + jurisdicciones), el prompt inicial de cada agente —que **incluye el repo del proyecto**—, su **topología**, el **conjunto temático de nombres** y —si habrá digest— los datos de correo.
 - **Nombres:** la coordinadora **se nombra** y **bautiza** al resto con un conjunto **cercano al dominio del proyecto**. Reserva "Cambium" y la metáfora del árbol para el kit; no los uses como nombres de agente. (Ver §VI.)
 - **Topología — la humana decide por agente:**
@@ -45,7 +45,7 @@
 
 ## V. Los antipatrones
 
-Dejar de escribir bitácora · mergear en rojo · fiarse de la notificación de fin · derivar la fecha del cron de `now()` · usar un "turno actual" mutable · ser juez y parte en producción · tratar una memoria sin autoría como fuente de verdad.
+Dejar de escribir bitácora · mergear en rojo · fiarse de la notificación de fin · derivar la fecha del cron de `now()` · usar un "turno actual" mutable · ser juez y parte en producción · tratar una memoria sin autoría como fuente de verdad · escribir rutas locales (`C:\…`) en ficheros versionados · ensuciar la raíz del proyecto con el marco metodológico (va en `.cambium/`).
 
 ## VI. Cláusula de adaptación (esqueleto y cuerpo)
 

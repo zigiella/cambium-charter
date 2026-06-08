@@ -2,6 +2,10 @@
 
 Todas las versiones de Cambium Charter. Formato: fecha · cambios.
 
+## v0.2.2 — 2026-06-08
+- Plantillas de arranque: `arranque-coordinadora.md` y `arranque-agente.md` (el mensaje listo-para-pegar que faltaba).
+- §III refuerza tres lecciones de uso real: la coordinadora **instala el método en el repo del proyecto** (no solo lo lee); el prompt de cada agente **incluye el repo**; y los nombres se eligen **cercanos al dominio**, no la metáfora del método.
+
 ## v0.2.1 — 2026-06-08
 - Plantilla `REGLAS.md` (el hueco de los innegociables, que faltaba) y `CONTRIBUTING.md`.
 - README sincronizado.

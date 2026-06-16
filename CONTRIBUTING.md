@@ -9,6 +9,12 @@ Cambium Charter es un **documento vivo**: mejora con el uso real, no con opinion
 
 ## Versionado
 - SemVer. Doctrina nueva → *minor*; correcciones y plantillas → *patch*. Todo queda en `CHANGELOG.md`.
+- La carta **no** lleva su número dentro: el sello vive en `.cambium/VERSION` (y el historial en `CHANGELOG.md`).
+- **Sellar** una versión = mergear su PR **+ crear el tag** `vX.Y`. Los proyectos re-vendorizan desde ese tag (§IX); sin tag, el «re-vendoriza desde el tag nuevo» no resuelve.
+
+## Mantenimiento
+- Los **cuatro adaptadores** (`adapters/CLAUDE.md` · `AGENTS.md` · `GEMINI.md` · `.cursorrules`) tienen **cuerpo idéntico** por diseño: al tocar la doctrina del adaptador, edítalos los cuatro a la vez (solo difiere la línea-comentario de qué herramienta lo lee).
+- `CHARTER.md` es la fuente; `README.md` y su sección EN son **espejo derivado**: si cambias la carta, sincroniza el README.
 
 ## Tono
 Sobrio, honesto, con cicatrices reales. Sin humo. El "no" es una contribución válida.

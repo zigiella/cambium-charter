@@ -23,7 +23,7 @@ La carta no es teoría: sale de **tres equipos reales** que la encarnaron en dom
 - **Qué construye:** una entrega para un **benchmark con deadline, métrica objetiva y coste por cada medición**.
 - **Forma:** **multi-herramienta de verdad** (tres proveedores distintos), por **turnos**, con **una sola escritora** (solo la coordinadora commitea; las demás *alimentan* datos).
 - **Cómo encarna la carta:** **jurisdicción funcional** (diseñar / medir / romper), no por carpetas; una **memoria compartida vía MCP** (tipo Engram) como bandeja, pero con el **repo como reloj**; y —único de los tres— un **adversario independiente** activo que **acertó las tres veces** que avisó de un fallo.
-- **Cicatriz:** la memoria compartida **no modela autoría** → tuvieron que *hackear* "de quién es el turno" en texto, y un turno **mutable** hizo que se escribiera sobre el id viejo → la corrección: **el repo es el reloj, la memoria es bandeja**. El adversario se sostiene solo porque **hay métrica objetiva y el error cuesta dinero**.
+- **Cicatriz:** la memoria compartida **no modela autoría** → tuvieron que *hackear* "de quién es el turno" en texto, y un turno **mutable** hizo que se escribiera sobre el id viejo → la corrección: **el repo es el reloj, la memoria es bandeja**. El adversario se sostiene solo porque **hay métrica objetiva y el error cuesta dinero** — y precisamente por ese coste **no auditaba cada acción**: entraba por **hito y antes de cada medición cara o irreversible** (por-riesgo), no en cada paso. Auditar todo habría quemado presupuesto sin pagarse.
 
 ## La foto, en una tabla
 

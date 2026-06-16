@@ -10,15 +10,28 @@
 
 ## Qué es · What it is
 
-**ES** — Método abierto, portable y versionado para que una dirección humana coordine varios agentes de IA (Claude, Codex, Gemini…) construyendo algo real sobre un mismo repositorio, con trazabilidad y honestidad. No es un framework ni una librería: es el **oficio**, escrito y listo para heredar.
+**ES** — **Cambium Charter es el "manual de oficio" que le das a uno de tus agentes de IA para que coordine a los demás sobre tu repositorio — contigo dirigiendo.** Fija lo mínimo que sostiene el orden con 3-6 agentes a la vez: dónde está la verdad (el repo), quién manda en qué (jurisdicciones), cómo se entrega (el PR) y cómo se dice "no sé" (honestidad). No es un framework ni una librería que instalas: es el **oficio**, escrito y listo para que tu agente lo adopte.
 
-**EN** — An open, portable, versioned method for one human to direct several AI agents building something real over a shared repo, with traceability and honesty. Not a framework or a library: it's the **craft**, written down and ready to inherit.
+**EN** — **Cambium Charter is the "craft manual" you hand to one of your AI agents so it coordinates the others over your repository — with you directing.** It fixes the minimum that holds order with 3-6 agents at once: where truth lives (the repo), who owns what (jurisdictions), how work ships (the PR) and how to say "I don't know" (honesty). Not a framework or a library you install: it's the **craft**, written down and ready for your agent to adopt.
 
 ## Por qué
 
 Los agentes olvidan, se pisan, derivan y a veces inventan. Sin disciplina compartida, 3-6 agentes degeneran en caos o en un humano haciendo de cable a jornada completa. Esta carta fija lo mínimo que sostiene el orden: dónde está la verdad, quién manda en qué, cómo se entrega y cómo se dice "no sé".
 
-## Cómo se adopta
+## Cómo empezar (poner un proyecto en marcha)
+
+Lo primero de un proyecto Cambium **no es el repo ni el código: es crear a tu coordinadora.** Ella monta el resto.
+
+1. **Abre una conversación con tu agente de confianza** (Claude, Codex, Gemini, Cursor…). Va a ser tu **coordinadora**: diseña, revisa, integra y es la única que mergea. Tú diriges.
+2. **Dile que trabajaréis con Cambium Charter y pégale el arranque.** El mensaje listo-para-pegar es [`plantillas/arranque-coordinadora.md`](plantillas/arranque-coordinadora.md). En corto:
+   > *«Desde ahora eres la coordinadora de `<MI PROYECTO>` bajo el método **Cambium Charter**. Adopta el método leyendo github.com/zigiella/cambium-charter (empieza por `CHARTER.md`). Yo dirijo, tú coordinas. Cuando lo tengas, te paso la spec.»*
+3. **Pásale la spec o la idea de tu proyecto** (no hace falta que esté cerrada — afinarla es trabajo suyo). Con eso, ella te ayuda a **crear el repo** (propone nombre/visibilidad; las credenciales las pones tú), **instala el método** en `.cambium/` y te **propone el equipo mínimo** (roles + una de las 3 configuraciones).
+4. **Ratifica el equipo** (o ajústalo). **Nada se levanta hasta tu OK**: tú tienes el voto final y los secretos.
+5. **A partir de ahí, diriges por latidos:** despiertas a cada agente con un *«mira tu `next.md`»*; el repo es la verdad, el PR es la entrega.
+
+*(El detalle completo está en [`plantillas/arranque-coordinadora.md`](plantillas/arranque-coordinadora.md) y en §III del CHARTER.)*
+
+## Cómo queda el proyecto (estructura)
 
 En el proyecto que adopta el método, mantén la **raíz limpia**:
 
@@ -33,11 +46,9 @@ Pasos: *Use this template* (o copia lo necesario) → rellena `REGLAS.md` y los 
 
 Copia versionada, no dependencia viva: re-vendoriza desde el tag nuevo y lee el `CHANGELOG`. Funciona offline. Cuando un equipo **adopta** una versión nueva, la coordinadora corre el ritual de **§IX** (re-vendorizar `.cambium/` + sellar `VERSION` → migrar `next.md`/`role.md`/plantillas sin perder la cola → encolar la auto-actualización en el `next.md` de cada agente → despertar a cada una según su tipo). Funciona en las tres configuraciones de equipo. Plantilla: `plantillas/actualizacion-charter.md`.
 
-## Cómo nace un equipo · cómo se compone
+## Las tres configuraciones de equipo
 
-**Génesis — la coordinadora nace primero:** lo primero del proyecto no es repo ni código, es **crear a la coordinadora** desde una spec/idea (o trabajándola). Ella asume su rol, ayuda a crear el repo online, instala el método y propone el equipo mínimo; la humana ratifica.
-
-**Tres configuraciones de equipo** que la coordinadora debe saber manejar: **(a) propio** — todas subagentes suyas; **(b) manual** — agentes configurados a mano, posiblemente en tecnologías distintas (su prompt iniciático **siempre incluye "clona el repo"**); **(c) híbrido** — subagentes + agentes manuales (que pueden tener sus propios subagentes). El método no cambia entre las tres; cambia el cableado de arranque y de relevo.
+Una vez nace la coordinadora (ver *Cómo empezar*), propone —y tú ratificas— el equipo en una de tres formas, que ella debe saber manejar: **(a) propio** — todas subagentes suyas; **(b) manual** — agentes configurados a mano, posiblemente en tecnologías distintas (su prompt iniciático **siempre incluye "clona el repo"**); **(c) híbrido** — subagentes + agentes manuales (que pueden tener sus propios subagentes). El método no cambia entre las tres; cambia el cableado de arranque y de relevo.
 
 ## Qué hay dentro
 

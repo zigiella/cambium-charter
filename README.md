@@ -42,13 +42,33 @@ En el proyecto que adopta el método, mantén la **raíz limpia**:
 
 Pasos: *Use this template* (o copia lo necesario) → rellena `REGLAS.md` y los roles → pon el adaptador en la raíz → crea `.cambium/VERSION` (sello + `upstream:`). Nunca escribas rutas locales (`C:\…`) en ficheros versionados.
 
-## Cómo se actualiza
-
-Copia versionada, no dependencia viva: re-vendoriza desde el tag nuevo y lee el `CHANGELOG`. Funciona offline. Cuando un equipo **adopta** una versión nueva, la coordinadora corre el ritual de **§IX** (re-vendorizar `.cambium/` + sellar `VERSION` → migrar `next.md`/`role.md`/plantillas sin perder la cola → encolar la auto-actualización en el `next.md` de cada agente → despertar a cada una según su tipo). Funciona en las tres configuraciones de equipo. Plantilla: `plantillas/actualizacion-charter.md`.
-
 ## Las tres configuraciones de equipo
 
-Una vez nace la coordinadora (ver *Cómo empezar*), propone —y tú ratificas— el equipo en una de tres formas, que ella debe saber manejar: **(a) propio** — todas subagentes suyas; **(b) manual** — agentes configurados a mano, posiblemente en tecnologías distintas (su prompt iniciático **siempre incluye "clona el repo"**); **(c) híbrido** — subagentes + agentes manuales (que pueden tener sus propios subagentes). El método no cambia entre las tres; cambia el cableado de arranque y de relevo.
+Una vez nace la coordinadora (ver *Cómo empezar*), propone —y tú ratificas— **cómo se compone el equipo**. Hay tres formas, y una buena coordinadora sabe manejar las tres. **El método no cambia entre ellas; solo cambia el cableado de arranque y de relevo** — y la autoridad de merge sigue siendo **exactamente una** (la coordinadora).
+
+### (a) Propio · todas subagentes suyas
+La coordinadora **instancia y dirige a todo el equipo como subagentes** suyos —cada uno aislado en su *worktree*, entregando por PR—. Sin cable humano ni prompts que pegar: una herramienta, una máquina, una sola mano que coordina.
+*Cuándo:* lo más simple y autónomo; ideal para abrir frentes en paralelo deprisa.
+*Límite:* comparten herramienta con la coordinadora y son frágiles para esperas largas (un subagente muere por inactividad, aunque su trabajo ya viva en su PR).
+
+### (b) Manual · agentes a mano, multi-tecnología
+Agentes que **configuras tú a mano**, cada uno en su propia herramienta (Claude, Codex, Gemini, Cursor…), con su contexto y sus turnos. La coordinadora no los instancia: los levanta con un **prompt iniciático** (`plantillas/arranque-agente.md`) que **siempre incluye "clona el repo"** —ese agente no comparte tu sistema de ficheros: sin el repo clonado, no existe para el método—.
+*Cuándo:* quieres mezclar tecnologías, o agentes robustos para turnos largos.
+*Coste:* más cable humano (pegar prompts, pasar latidos).
+
+### (c) Híbrido · lo mejor de ambas
+Subagentes **y** agentes manuales conviviendo; un agente manual puede tener, a su vez, **sus propios** subagentes (anidable). Cada rama del árbol corre con su cadencia.
+*Cuándo:* equipos reales que crecen — un núcleo de subagentes rápidos + alguna pieza manual donde haga falta.
+
+### De un vistazo
+
+| | **(a) Propio** · subagentes | **(b) Manual** · multi-tec | **(c) Híbrido** |
+|---|---|---|---|
+| **Quién instancia** | la coordinadora | tú pegas el prompt iniciático | mezcla: ella + tú |
+| **Prompt + "clona el repo"** | no aplica | obligatorio por agente | solo las manuales |
+| **Topología** | subagentes (worktrees) | clientes separados | ambas, anidables |
+| **Cadencia / latido** | la coordinadora despierta a los suyos | latido humano o programado | cada rama, la suya |
+| **Relevo (§VIII)** | reconstrucción desde el repo | cada agente, desde el repo | igual, por subárbol |
 
 ## Qué hay dentro
 
@@ -56,6 +76,10 @@ Una vez nace la coordinadora (ver *Cómo empezar*), propone —y tú ratificas�
     adapters/       shims por herramienta (CLAUDE, AGENTS, GEMINI, .cursorrules; cuerpo idéntico)
     plantillas/     arranque-coordinadora · arranque-agente · role · REGLAS · brief · next (cola) · bitácora · ADR · PR-checklist · traspaso-coordinacion · memoria-coordinadora · actualizacion-charter
     EJEMPLOS.md     tres equipos reales como prueba viva
+
+## Cómo se actualiza
+
+Copia versionada, no dependencia viva: re-vendoriza desde el tag nuevo y lee el `CHANGELOG`. Funciona offline. Cuando un equipo **adopta** una versión nueva, la coordinadora corre el ritual de **§IX** (re-vendorizar `.cambium/` + sellar `VERSION` → migrar `next.md`/`role.md`/plantillas sin perder la cola → encolar la auto-actualización en el `next.md` de cada agente → despertar a cada una según su tipo). Funciona en las tres configuraciones de equipo. Plantilla: `plantillas/actualizacion-charter.md`.
 
 ## Cambium Charter (EN, essentials)
 

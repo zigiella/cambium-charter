@@ -2,6 +2,17 @@
 
 Todas las versiones de Cambium Charter. Formato: fecha · cambios.
 
+## v0.3 — 2026-06-16
+- **Coherencia (no rompe principios):** la carta deja de hardcodear su número de versión y remite a `.cambium/VERSION`/`CHANGELOG` (cierra la divergencia v0.2 vs v0.2.3). Se define el **latido** (señal-puntero; no transporta la tarea; el latido inicia, el PR cierra). La **puerta** se declara canónica en `plantillas/PR-checklist.md`. "CI verde" se generaliza a "la verificación que tenga el proyecto" (sin pipeline ≠ sin verificación). Nota al pie de **identity-inline** con el comando. El antipatrón `now()` se explica. Convención de handoff (`Handoff a:`).
+- **Invariante 2 reforzado:** la coordinadora coordina y **codifica solo lo mínimo**; **exactamente una autoridad de merge** en todo momento (auditor, humana y agente programada no mergean).
+- **`next.md` como cola multi-tarea por agente:** varias tareas en orden, **acumulativas** entre turnos, nunca borradas por reescritura. "Mirar `next.md` siempre" es la primera acción de toda agente; **la asignación va al repo (push) ANTES del latido**.
+- **Topología:** matiz al subagente (robusto para el TRABAJO con worktree+PR; frágil para continuidad/multi-tecnología). Nueva cadencia de **despertar programado** (contrato agnóstico; primitiva en `role.md`), con no-op silencioso en vacío y fallo ruidoso al despertar.
+- **Memoria de coordinación (opcional):** copia versionada y saneada en `.cambium/memoria/`, bandeja con autoría subordinada al repo, sin secretos, verificada por la puerta.
+- **Verificar-o-declarar** + PR no-listo cuando no se puede verificar; la coordinadora monta el camino de verificación. **Camino de producción** = liveness + modos de conexión de dependencias externas (genérico).
+- **Artículo 5** (umbral de verificación independiente) y **Artículo 3** (PR de equipo vs externo) afinados. **Ritual de reconstrucción-desde-repo** (§III) y nuevo **§VIII Relevo de coordinación** (reconstrucción + ratificación humana + cambio de llave atómico).
+- **Plantillas:** `next.md` y `role.md` reescritas (cola; campos rama/handoff/despertar); nuevas `traspaso-coordinacion.md` y `memoria-coordinadora.md`.
+- **Minimalismo** explícito en el preámbulo (presupuesto de tamaño). Descartado por over-engineering/portabilidad: rol steward dedicado, ids `T-NNNN`/poda automática, cerrojos, nombres de proveedores en la doctrina.
+
 ## v0.2.3 — 2026-06-08
 - Instalación ordenada: el método se vendoriza en `.cambium/`; en la raíz del proyecto solo van los adaptadores. El `README` del proyecto no se sobrescribe.
 - Adaptadores apuntan a `.cambium/CHARTER.md` y `.cambium/REGLAS.md`.

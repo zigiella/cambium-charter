@@ -23,7 +23,7 @@ Los agentes olvidan, se pisan, derivan y a veces inventan. Sin disciplina compar
 En el proyecto que adopta el método, mantén la **raíz limpia**:
 
 - **Raíz:** solo el/los **adaptadores** de tu herramienta (`CLAUDE.md`, `AGENTS.md`…). La herramienta los lee ahí.
-- **`.cambium/`:** el método vendorizado — `CHARTER.md`, tu `REGLAS.md` y un `VERSION` con el sello **y la procedencia** (p. ej. `Cambium Charter v0.3` + `upstream: github.com/zigiella/cambium-charter`, para que actualizar con §IX resuelva la fuente solo). Opcional: `memoria/` si la coordinadora versiona su memoria.
+- **`.cambium/`:** el método vendorizado — `CHARTER.md`, tu `REGLAS.md` y un `VERSION` con el sello **y la procedencia** (p. ej. `Cambium Charter v0.3.1` + `upstream: github.com/zigiella/cambium-charter`, para que actualizar con §IX resuelva la fuente solo). Opcional: `memoria/` si la coordinadora versiona su memoria.
 - **`docs/equipo/`:** un `role.md` por agente. **`bitacora/`:** `next.md` + las bitácoras.
 - El `README.md` del proyecto es **del proyecto**; no lo pises con el del kit.
 
@@ -67,4 +67,4 @@ An open, portable method for one human to direct several AI agents building real
 
 ## Linaje · licencia · versión
 
-Desciende del oficio **Cambium**. Textos bajo **CC-BY-4.0**; código y plantillas bajo **MIT** (ver `LICENSE`). Versión sellada en `.cambium/VERSION` (**v0.3**).
+Desciende del oficio **Cambium**. Textos bajo **CC-BY-4.0**; código y plantillas bajo **MIT** (ver `LICENSE`). Versión sellada en `.cambium/VERSION` (**v0.3.1**).

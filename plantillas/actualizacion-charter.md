@@ -6,6 +6,10 @@
 > reconstrucción-desde-repo (§III). Doctrina: CHARTER §IX. No es relevo (§VIII) ni génesis (§III).
 > Adoptar una versión ≠ custodiar la carta (§VII): aquí solo se CONSUME una versión ya sellada.
 
+## Latido de la dirección humana (cómo arranca)
+
+*«‹Coordinadora›: adopta Cambium Charter vX.Y; re-vendoriza desde `‹kit-repo›@vX.Y` y corre §IX; repórtame ‹equipo en vX.Y›.»* — un puntero (versión + tag de origen), no el ritual. `vX.Y` debe ser un **tag sellado** del kit. Si el equipo está en una versión **pre-§IX**, el primer salto se hace a mano (re-vendorizar ya trae §IX); de ahí en adelante basta este latido.
+
 ## Orden obligatorio (no se salta)
 
 ### 1. Re-vendorizar `.cambium/` (PR que mergea SOLO la coordinadora)

@@ -8,7 +8,7 @@
 
 ## Latido de la dirección humana (cómo arranca)
 
-*«‹Coordinadora›: adopta Cambium Charter vX.Y; re-vendoriza desde `‹kit-repo›@vX.Y` y corre §IX; repórtame ‹equipo en vX.Y›.»* — un puntero (versión + tag de origen), no el ritual. `vX.Y` debe ser un **tag sellado** del kit. Si el equipo está en una versión **pre-§IX**, el primer salto se hace a mano (re-vendorizar ya trae §IX); de ahí en adelante basta este latido.
+*«‹Coordinadora›: adopta Cambium Charter vX.Y.»* — basta nombrar la versión; tú resuelves **de dónde** re-vendorizar leyendo `upstream:` en tu `.cambium/VERSION` (grabado en la génesis). `vX.Y` debe ser un **tag sellado** del kit. Si `upstream:` faltara, el latido nombra la fuente (`…desde ‹kit-repo›@vX.Y`). Si el equipo está en una versión **pre-§IX**, el primer salto se hace a mano (re-vendorizar ya trae §IX); de ahí en adelante basta este latido.
 
 ## Orden obligatorio (no se salta)
 

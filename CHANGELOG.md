@@ -2,6 +2,10 @@
 
 Todas las versiones de Cambium Charter. Formato: fecha · cambios.
 
+## v0.3.1 — 2026-06-16
+- **Procedencia en `.cambium/VERSION` (`upstream:`):** el sello graba también la URL del kit del que se vendorizó. Así, al *actualizar* (§IX), la coordinadora resuelve de dónde re-vendorizar leyendo su propio repo —no hay que decírselo en el latido—. Se graba en la génesis (§III).
+- **Latido de actualización mínimo:** con `upstream:` grabado, el latido canónico de la humana se reduce a *«‹Coordinadora›: adopta Cambium Charter vX.Y.»* (la fuente explícita `…desde ‹kit-repo›@vX.Y` queda como *fallback* si no hubiera `upstream:`). Sincronizados §IX, `README` y `plantillas/actualizacion-charter.md`.
+
 ## v0.3 — 2026-06-16
 - **Coherencia (no rompe principios):** la carta deja de hardcodear su número de versión y remite a `.cambium/VERSION`/`CHANGELOG` (cierra la divergencia v0.2 vs v0.2.3). Se define el **latido** (señal-puntero; no transporta la tarea; el latido inicia, el PR cierra). La **puerta** se declara canónica en `plantillas/PR-checklist.md`. "CI verde" se generaliza a "la verificación que tenga el proyecto" (sin pipeline ≠ sin verificación). Nota al pie de **identity-inline** con el comando. El antipatrón `now()` se explica. Convención de handoff (`Handoff a:`).
 - **Invariante 2 reforzado:** la coordinadora coordina y **codifica solo lo mínimo**; **exactamente una autoridad de merge** en todo momento (auditor, humana y agente programada no mergean).

@@ -1,7 +1,7 @@
 # <Nombre> — <rol>
 
 - **Tecnología:** <Claude Code | Codex | Gemini…>
-- **Topología:** <subagente de la coordinadora | cliente separado>
+- **Topología:** <subagente de la coordinadora | cliente separado> · **configuración de equipo:** <(a) propio · todas subagentes | (b) manual/multi-tec | (c) híbrido> · <si tengo subagentes propios: cuáles>
 - **Despertar:** <por latido | programada cada <N> min · primitiva: <cron/tarea de la herramienta>>
 - **Jurisdicción:** <carpeta(s) o función>
 - **Rama:** `feat/<nombre>-<tema>`

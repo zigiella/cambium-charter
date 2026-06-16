@@ -31,13 +31,19 @@ Pasos: *Use this template* (o copia lo necesario) → rellena `REGLAS.md` y los 
 
 ## Cómo se actualiza
 
-Copia versionada, no dependencia viva: re-vendoriza desde el tag nuevo y lee el `CHANGELOG`. Funciona offline.
+Copia versionada, no dependencia viva: re-vendoriza desde el tag nuevo y lee el `CHANGELOG`. Funciona offline. Cuando un equipo **adopta** una versión nueva, la coordinadora corre el ritual de **§IX** (re-vendorizar `.cambium/` + sellar `VERSION` → migrar `next.md`/`role.md`/plantillas sin perder la cola → encolar la auto-actualización en el `next.md` de cada agente → despertar a cada una según su tipo). Funciona en las tres configuraciones de equipo. Plantilla: `plantillas/actualizacion-charter.md`.
+
+## Cómo nace un equipo · cómo se compone
+
+**Génesis — la coordinadora nace primero:** lo primero del proyecto no es repo ni código, es **crear a la coordinadora** desde una spec/idea (o trabajándola). Ella asume su rol, ayuda a crear el repo online, instala el método y propone el equipo mínimo; la humana ratifica.
+
+**Tres configuraciones de equipo** que la coordinadora debe saber manejar: **(a) propio** — todas subagentes suyas; **(b) manual** — agentes configurados a mano, posiblemente en tecnologías distintas (su prompt iniciático **siempre incluye "clona el repo"**); **(c) híbrido** — subagentes + agentes manuales (que pueden tener sus propios subagentes). El método no cambia entre las tres; cambia el cableado de arranque y de relevo.
 
 ## Qué hay dentro
 
     CHARTER.md      la carta (la doctrina)
-    adapters/       shims por herramienta (CLAUDE, AGENTS, GEMINI; cuerpo idéntico)
-    plantillas/     arranque-coordinadora · arranque-agente · role · REGLAS · brief · next (cola) · bitácora · ADR · PR-checklist · traspaso-coordinacion · memoria-coordinadora
+    adapters/       shims por herramienta (CLAUDE, AGENTS, GEMINI, .cursorrules; cuerpo idéntico)
+    plantillas/     arranque-coordinadora · arranque-agente · role · REGLAS · brief · next (cola) · bitácora · ADR · PR-checklist · traspaso-coordinacion · memoria-coordinadora · actualizacion-charter
     EJEMPLOS.md     tres equipos reales como prueba viva
 
 ## Cambium Charter (EN, essentials)
@@ -57,7 +63,7 @@ An open, portable method for one human to direct several AI agents building real
 2. The PR is the universal interface — any tool plugs in by producing a PR; "there's a PR" is the done signal.
 3. The gate is discipline — only the coordinator merges, never red; harden with rules if the repo allows. A ratified team PR she merges by discipline; an outside contribution also waits for the human's ratification.
 4. Shared memory is optional and subordinate — principles over repo+PR; the tool only as a side inbox.
-5. Separate auditor from gatekeeper before production — whoever merges can't be the only auditor forever; independent verification is required before any public or irreversible release, and the auditor verifies but does not merge.
+5. Separate auditor from gatekeeper before production — whoever merges can't be the only auditor forever; independent verification costs tokens and time, so it is *not per-action* (auditing every action is an antipattern). Its cadence is threefold: periodic (by milestone), by-risk (required before any public or irreversible release), and cross-checked (peers occasionally audit each other's front, which the coordinator may suggest). The auditor verifies but does not merge.
 
 ## Linaje · licencia · versión
 

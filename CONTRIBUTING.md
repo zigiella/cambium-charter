@@ -5,7 +5,7 @@ Cambium Charter es un **documento vivo**: mejora con el uso real, no con opinion
 ## Cómo proponer cambios
 - Abre un **issue** con el **caso real** (qué falló, qué aprendiste). La evidencia manda, como en el método.
 - O un **PR** contra `main`. La puerta: que sea coherente con los seis invariantes; si tocas la doctrina, justifícalo con un caso, no con una opinión.
-- Un cambio de método relevante va con un **ADR** (usa `plantillas/ADR.md`).
+- Un cambio de método relevante va con un **ADR** (usa `plantillas/ADR.md`); los ADR del propio kit viven en `adr/` (el primero: `adr/0001-rigor-proporcional-en-la-puerta.md`).
 
 ## Versionado
 - SemVer. Doctrina nueva → *minor*; correcciones y plantillas → *patch*. Todo queda en `CHANGELOG.md`.

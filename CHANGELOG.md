@@ -2,6 +2,20 @@
 
 Todas las versiones de Cambium Charter. Formato: fecha · cambios.
 
+## v0.6 · 2026-07-02
+
+Release de **portada + poda + dial con suelo**. Origen: paquete "Charter v2" de Beatriz (dirección) + Ria (redacción), revisado por Cambium contra la operación real de Savia. Razonado en `adr/0003`.
+
+- **`MANIFIESTO.md` (nuevo):** el método en una página, prioridad no-dev. Es portada y espejo; la doctrina sigue en `CHARTER.md` (§VI). El README estrena "Empieza rápido" en el frontal.
+- **Poda editorial de la carta (≈36→19 KB, principios intactos):** sin anécdotas ni nombres de equipos (a `EJEMPLOS.md`), justificación a `adr/`, tabla de configuraciones al README. Aplica las reglas de escritura de la dirección (`plantillas/reglas-escritura.md`, nuevas): sin guiones largos, sin contrastes retóricos, verbos con responsabilidad.
+- **Invariantes con nombre corto y tres pares** (presentación; significado intacto): Mando humano · Un solo timón · El repo es la verdad · Autoría real · Jurisdicción acotada · Honestidad sin fachada.
+- **Dial de autonomía (§IV):** (a) posturas de presencia explícitas de la humana sobre la integración, incluida la delegación **por juicio** ("mergea cuando lo veas claro"), registrada y revocable (caso real: Savia 2026-06-30); (b) **suelo de irreversibilidad**: lo irreversible hacia fuera, la doctrina y el redibujo de equipo se escalan siempre, por madura que esté la spec (caso real: la frontera de agua de Savia).
+- **Recibo (`plantillas/recibo.md`, nuevo) + línea en la puerta:** evidencia anclada (comando + salida), pendientes declarados; con PRs, el cuerpo del PR es el recibo. Converge con la issue #7.
+- **Kit no-dev (nuevo):** `glosario.md` ("latido" alineado con §IV), `mapa-jurisdicciones.md`, `registro-decisiones.md` (con columna de filtro no-dev), `arranque-solo.md` (modo humana + una agente; el contrapeso del Art. 5 como pieza crítica).
+- **Cola (`plantillas/next.md`):** recomendación single-writer con candado del puesto (no de la persona); la señal de fin es el PR mergeado.
+- **`CONTRIBUTING.md`:** alcance "disciplina obligatoria, tooling opcional" (software que verifica sí; que decide, no; un check *required* exige override humano documentado), filtro no-dev registrable y sección de estilo.
+- **Rechazado/aplazado (adr/0003):** "merge siempre validado por humano" como absoluto; "dial de control" como concepto paralelo; redefinición de "latido"; federación de coordinadores; `AGENTS.md` en dos capas (aplazado).
+
 ## v0.5 — 2026-06-18
 
 - **Release de ADELGAZAMIENTO: el Artículo 5 vuelve a caber en una lectura (≈366→286 palabras).** Des-duplicación pura, no recorte: el detalle de la **mordida temprana** (justificación expandida) y de la **delegación acotada del merge** (mecánica: commit-acta, revocable, no transitiva, nunca audita lo que mergea, no programada, crecer→relevo, condiciones operativas) se recoloca a `adr/0001`, que pasa a ser su **ubicación canónica viva** —la carta lo apunta, no lo repite—. Permanecen en el esqueleto los principios-frase, la clase regulada estrecha, **"ratificada por la humana"** (invariante 1) y las **cuatro líneas rojas** de la delegación (nunca código, doctrina/`.cambium/`, **la mordida regulada** ni la jurisdicción ajena) + "ningún PR tiene dos autoridades a la vez" (invariante 2). Razonado en `adr/0002`.

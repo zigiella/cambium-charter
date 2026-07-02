@@ -1,4 +1,4 @@
-# next.md — cola de tareas por agente
+# next.md · cola de tareas por agente
 
 > La coordinadora ESCRIBE aquí la cola de cada agente y hace push ANTES de pasar
 > el latido por chat: el latido es un puntero a este fichero, no la asignación.
@@ -12,7 +12,10 @@
 >   (pasa a `### Hecho`) o la coordinadora la cancela CON MOTIVO (`### Cancelada`).
 >   Nunca se borra por reescritura; si un turno no corrió, lo pendiente sobrevive.
 > - Marcas: `[ ]` pendiente · `[~]` en curso (= turno de quien la tomó) · `[x]` hecho.
-> - La agente solo cambia el estado de SUS tareas; la coordinadora añade y prioriza.
+> - RECOMENDADO una sola escritora: la coordinadora edita la cola y refleja el estado;
+>   las agentes NO tocan este fichero (dos escritoras sobre una cola compartida = conflicto).
+>   El candado es del PUESTO de coordinación, no de la persona: en un relevo (§VIII),
+>   la entrante hereda la escritura; la cola nunca se congela.
 > - `[x]` solo cuando hay PR mergeado (la señal de fin es el PR, no la marca).
 > - Cola vacía = no-op: no inventes trabajo; reporta y vuelve a esperar.
 

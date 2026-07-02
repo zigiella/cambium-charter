@@ -37,6 +37,14 @@ La carta no es teoría: sale de **tres equipos reales** que la encarnaron en dom
 | Auditor independiente | no | no (juez y parte) | sí (3/3) |
 | Cable lateral | humano | coordinadora + contratos | bandeja + repo-reloj |
 
+## Cambium a solas (humana + una agente)
+
+El método funciona a escala uno; el detalle operativo y el prompt viven en `plantillas/arranque-solo.md`. Lo esencial: la agente única es la coordinadora (invariante 2, trivial); la jurisdicción degenera al reparto humana↔agente; duermen el relevo, el cross-audit y los latidos múltiples. **La pieza crítica es el contrapeso del Art. 5:** con una sola agente que construye e integra, el adversario antes de lo irreversible es la humana o una copia fresca sin contexto. El resto (repo-verdad, cola, PR, recibo, dial con suelo) opera idéntico. Crecer a equipo no exige re-aprender: la agente ya es la coordinadora.
+
+## Encarnación dev de los invariantes
+
+Para quien viene del oficio técnico, tres invariantes tienen implementación estándar: **Un solo timón** (2) → release manager, merge queue; **Autoría real** (4) → commit trailers (`Co-Authored-By`), `git blame`; **Jurisdicción acotada** (5) → `CODEOWNERS`. El kit define el contenido, no el formato: la tabla Markdown y el fichero ejecutable son encarnaciones de la misma regla.
+
 ## Qué demuestran juntos
 
 - **El núcleo aguanta en tres dominios opuestos:** dirección humana + una coordinadora con la llave + repo-verdad + atribución + jurisdicción + honestidad.

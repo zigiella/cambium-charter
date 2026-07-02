@@ -1,4 +1,4 @@
-# La puerta (antes de mergear) — lista canónica
+# La puerta (antes de mergear) · lista canónica
 
 > Esta es la lista CANÓNICA de la puerta. `CHARTER.md` §IV remite aquí y no la re-enumera.
 > Si editas la puerta, edítala aquí (la carta y el README EN son espejo).
@@ -8,6 +8,7 @@
 - [ ] **Sin secretos en el diff** (aplica también a `.cambium/memoria/` y a rutas locales `C:\…`).
 - [ ] **Procedencia / anclas** donde aplique.
 - [ ] **Bitácora actualizada.**
+- [ ] **Recibo en el cuerpo del PR** (`plantillas/recibo.md`): qué se hizo, evidencia anclada (comando + salida, no solo un check verde), pendientes y dudas declarados.
 - [ ] **Verificado de verdad:** lo no verificable está declarado y, si procede, el PR queda no-listo (DRAFT donde el forge lo soporte) hasta montar el camino de verificación.
 
 → si todo ✓: *squash merge* (solo la coordinadora).
